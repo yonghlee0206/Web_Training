@@ -1,0 +1,125 @@
+body{
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+header{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background: -webkit-linear-gradient(top, blue, white 30%, blue);
+    background: -moz-linear-gradient(top, blue, white 30%, blue);
+    background: -o-linear-gradient(top, blue, white 30%, blue);
+    background: linear-gradient(top, blue, white 30%, blue);
+    padding: 10px;
+    overflow: hidden;
+}
+header h1{
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+header nav{
+    width: 60%;
+    float: right;
+}
+nav ul{
+    list-style-type: none;
+    margin-right: 120px;
+}
+nav ul li{
+    display: inline-block;
+    float: right;
+    margin: 10px;
+    font-size: 1.2em;
+}
+nav ul li a{
+    color: white;
+    font-weight: 800px;
+    text-decoration: none;
+}
+a:hover{
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: black;
+}
+p{
+    font-size: 15px;
+    line-height: 20px;
+}
+h1{
+    font-size: 2em;
+}
+section{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #333;
+    padding: 5px;
+    overflow: hidden;
+}
+article h3{
+    padding: 10px;
+}
+aside{
+    clear: both;
+    height: auto;
+    padding-left: 20px;
+}
+footer{
+    clear: both;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+article{
+    width: 90%;
+    height: auto;
+    margin: 20px 10px;
+    padding: 20px;
+}
+#espresso{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-image: url(../../img/ess.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+#americano{
+    border: 3px dotted blue;
+    border-radius: 10px;
+    background-image: url(../../img/ame.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+#cappuccino{
+    border: 3px double red;
+    border-radius: 10px;
+    background-image: url(../../img/cappu.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+#latte{
+    border: 3px dashed green;
+    border-radius: 10px;
+    background-image: url(../../img/latte.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+#mocha{
+    border: 3px dashed darkblue;
+    border-radius: 10px;
+    background-image: url(../../img/mocha.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}

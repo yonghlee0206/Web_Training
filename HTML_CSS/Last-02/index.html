@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!--minimum-scale=1, maximum=1 : 최소 최대 화면 배율 설정(최소설정은 사용자가 너무 극단적으로 화면을 축소하는 것을 방지한다.)
+    user-scalable=no : 사용자가 크기 조절하기를 원치 않을 때 지정하도록 한다.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum=1, user-scalable=no">
+    <title>KOREA</title>  
+    
+    <!--reset.css는 기본적으로 초기화를 담당해주는 css파일-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!--파비콘은 웹페이지에 접속했을때, 상단 탭에 보여지는 아이콘을 의미한다.
+    이 아이콘은 즐겨찾기에 웹페이지를 등록할때도 사용된다.웹사이트를 대표
+    하는 로고(logo)의 개념과 유사하다.사이트의 성격도 드러내기도 한다.-->
+    <link rel="shortcut icon" href="images/favicon/korea_favicon.ico">
+    
+    <!--아래 내용은 아이폰의 파비콘을 나타내고자 한다면 추가하도록 하자-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/korea_favicon.ico">
+    
+    <!--아래 첫줄은 CDN방식으로 jquery파일을 참조하고 있다.(단, 인터넷 연결이 반드시
+    되어 있어야 한다.)-->
+    <!--<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>    -->
+    <!--아래는 직접 jquery를 다운로드를 해서 폴더에 저장하고 참조하는 것이다.-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/korea.min.js"></script>    
+</head>
+<body>
+    <div id="wrap">
+        <header class="header cfixed">
+            <h1 class="logo"><a href="">KOREA</a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">WE ARE</a></li>
+                    <li><a href="">WORK</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <span class="menu-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </header>
+        <article class="slider">
+            <img src="images/p-images/kyungbok.png" alt="경복궁 이미지">
+        </article>
+
+        <section class="content">
+            <section class="display-section">
+                <div class="container">
+                    <h2 class="sec-tit">WE ARE</h2>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </section>
+        </section>
+        <section class="promotion-section">
+            <div class="container">
+                <ul class="promo-list">
+                    <li>
+                        <a href="">
+                            <img src="images/s-images/promo01.png" alt="">
+                            <h3>HOME</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/s-images/promo02.png" alt="">
+                            <h3>WE ARE</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/s-images/promo03.png" alt="">
+                            <h3>WORK</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/s-images/promo04.png" alt="">
+                            <h3>BLOG</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="divider">
+        <section class="work-section cfixed">
+            <h2 class="sec-tit">WORK</h2>
+            <ul class="work-list">
+                <li>
+                    <a href="">
+                        <div class="info">
+                            <h3>이순신장군</h3>
+                            <span>WEB/PRINT</span>
+                        </div>
+                        <img src="images/p-images/work01.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="info">
+                            <h3>세종대왕</h3>
+                            <span>WEB/PRINT</span>
+                        </div>
+                        <img src="images/p-images/work02.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="info">
+                            <h3>안중근</h3>
+                            <span>WEB/PRINT</span>
+                        </div>
+                        <img src="images/p-images/work03.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="info">
+                            <h3>제주도</h3>
+                            <span>WEB/PRINT</span>
+                        </div>
+                        <img src="images/p-images/work04.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="info">
+                            <h3>태권도</h3>
+                            <span>WEB/PRINT</span>
+                        </div>
+                        <img src="images/p-images/work05.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="info">
+                            <h3>해운대</h3>
+                            <span>WEB/PRINT</span>
+                        </div>
+                        <img src="images/p-images/work06.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="info">
+                            <h3>한강</h3>
+                            <span>WEB/PRINT</span>
+                        </div>
+                        <img src="images/p-images/work07.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="info">
+                            <h3>거북선</h3>
+                            <span>WEB/PRINT</span>
+                        </div>
+                        <img src="images/p-images/work08.png" alt="">
+                    </a>
+                </li>
+            </ul>            
+        </section>
+        <hr class="m-divider">
+        <section class="blog-section">
+            <div class="container">
+                <h2 class="sec-tit">BLOG</h2>
+                <ul class="blog-list">
+                    <li>
+                        <a href="">
+                            <img src="images/p-images/blog01.png" alt="">
+                        </a>
+                        <!--<time> 태그의 datetime 속성은 <time> 요소의 날짜와 시간 데이터를 기계가 읽을 수 있는(machine-readable) 형태로 명시한다.-->
+                        <time datetime="2020-09-01">SEP 1, 2020</time>
+                        <a href="">
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/p-images/blog02.png" alt="">
+                        </a>
+                        <time datetime="2020-10-30">OCT 30, 2020</time>
+                        <a href="">
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/p-images/blog03.png" alt="">
+                        </a>
+                        <time datetime="2020-11-25">NOV 25, 2020</time>
+                        <a href="">
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>            
+        </section>
+        <section class="contact-section">
+           <div class="container">
+               <h2 class="sec-tit">CONTACT</h2>
+               <div class="form-box">
+                   <form action="" method="">
+                       <fieldset class="cfixed">
+                           <legend class="blind">CONTACT US</legend>
+                           <div class="form">
+                               <label for="name" class="blind">name</label>
+                               <input type="text" id="name" placeholder="Name">
+                               <label for="phone" class="blind">phone</label>
+                               <input type="tel" id="phone" placeholder="Phone">
+                               <label for="email" class="blind">email</label>
+                               <input type="email" id="email" placeholder="Email Address">               
+                           </div>
+                           <div class="textarea">
+                               <label for="message" class="blind">message</label>
+                               <textarea name="message" id="message" placeholder="Message"></textarea>     
+                           </div>                           
+                       </fieldset>
+                       <div class="send-btn">
+                           <button>SEND MESSAGE</button>
+                       </div>                       
+                   </form>
+               </div>               
+           </div>            
+        </section>
+        <footer class="footer">
+            <!--구글 지도 삽입하기-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.5232287879953!2d126.9757510511774!3d37.56629517969878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f332cb082b%3A0xe92b70ac420cf0a8!2z7ISc7Jq47Yq567OE7Iuc7LKt!5e0!3m2!1sko!2skr!4v1599000414363!5m2!1sko!2skr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p class="copyrigyt">KOREA</p>
+        </footer>
+   </div>
+</body>
+</html>

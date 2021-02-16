@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid white;
+        }
+        header{
+            height: 200px;
+            margin: 0;
+            background-image: url(../img/turbo.bmp);
+            background-position: center;
+        }
+        .navi{
+            background: darkblue;
+            width: 960px;
+            height: 60px;
+        }
+        .navi ul{
+            list-style-type: none;
+            height: 40px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        .navi ul li{
+            display: inline;
+            float: left;
+        }
+        /* link라는 반응선택자는 방문을 하지 않은 링크에 스타일 적용
+        visited라는 반응선택자는 방문을 한 링크에 스타일 적용 */
+        .navi a:link, .navi a:visited{
+            padding: 10px 5px 5px 35px;
+            display: block;
+            color: white;
+            width: 150px;
+            text-decoration: none;
+        }
+        /* 마우스 커서를 올려놓을때 스타일 적용 */
+        .navi a:hover{
+            text-decoration: 0px 2px 2px black;
+            color: yellow;
+        }
+        /* 마우스 클릭을 할 때 스타일 적용 */
+        .navi a:active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <nav class="navi">
+            <ul>
+                <li><a href="#"><b>이용 안내</b></a></li>
+                <li><a href="#"><b>이용 요금</b></a></li>
+                <li><a href="#"><b>예약 방법</b></a></li>
+                <li><a href="#"><b>객실 소개</b></a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

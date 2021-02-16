@@ -1,0 +1,66 @@
+
+@charset utf-8;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* css 초기화 */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, fieldset, form, legend, article, nav, section, aside, footer, ol, ul, li, time, img, label, header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    /* vertival-align 속성은 수직정렬을 해주는 속성이다. 단 inline 또는 table=cell box에서만 적용이 된다. baseline의 값은 글자의 아랫 부분을 기준으로 하는 것이다 */
+    vertical-align: baseline;
+    /* 다른 배경색과의 충돌을 없애기 위해서 초기화 할때 배경색을 투명하게 한다 */
+    background-color: transparent;
+}
+
+body{
+    font-family: 'Montserrat', '나눔고딕', '굴림';
+    line-height: 1;
+}
+
+article, aside, footer, header, nav, section{
+    display: block;
+}
+
+nav ul, li {
+    list-style-type: none;
+}
+
+a{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+hr{
+    display: block;
+    height: 2px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #757575;
+    color: #3f51bf;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    vertical-align: top;
+    border-radius: 0;
+    box-sizing: content-box;
+    appearance: none;
+}

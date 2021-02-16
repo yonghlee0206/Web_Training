@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB1 - JavaScript</title>
+        <meta charset="utf-8">
+        <style>
+            .js{
+                font-weight: bold;
+                color: red;
+            }
+            #first{
+                color: green;
+            }
+            span{
+                color: blue;
+            }
+        </style>
+        <script>
+            function LinkssetColor(color) {
+                var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color=color;
+                        i = i + 1;
+                    }
+            }
+
+            function BodySetColor(color) {
+                document.querySelector('body').style.color = color
+            }
+
+            function BodySetBackgroundColor(color) {
+                document.querySelector('body').style.backgroundColor = color
+            }
+
+            function nightDayHandler(self){
+                var target = document.querySelector('body');
+                if(self.value === 'night'){    
+                    BodySetBackgroundColor('black');
+                    BodySetColor('white');
+                    self.value='day';        
+
+                    LinkssetColor('powderblue');
+                }else{
+                    BodySetBackgroundColor('white');
+                    BodySetColor('black');
+                    self.value='night';   
+
+                    LinkssetColor('blue');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1><a href="index.html">WEB</a></h1>
+
+        <input type="button" value="night" onclick="nightDayHandler(this);">
+
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+
+        <h2 style="background-color:coral; color: powderblue;">JavaScript?</h2>
+        <p><span id="first" class="js">JavaScript</span> (/--------------/),[6] often abbreviated as JS, is a high-level, interpreted programming language. 
+            It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm. 
+            Alongside <span>HTML</span> and <span>CSS</span>, <span class="js">JavaScript</span> is one of the three core technologies of the World Wide Web. 
+            [7] <span class="js">JavaScript</span> enables interactive web pages and thus is an essential part of web applications. 
+            The vast majority of websites use it, [8] and all major web browsers have a dedicated <span class="js">JavaScript</span> engine to execute it.</p>
+    </body>
+</html>
