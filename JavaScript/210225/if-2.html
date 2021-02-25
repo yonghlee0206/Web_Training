@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-1</title>
+</head>
+<body>
+    <script>
+        var value = window.prompt("숫자를를 입력하세요.");
+        //아래코드는 string타입을 강제로 정수타입으로 바꾸는 코드
+        value = parseInt(value); //alert(typeof(value));
+
+        if(value % 2 == 0){
+            alert("짝수");
+        }
+        else{
+            alert("홀수");
+        }
+    </script>
+</body>
+</html>
