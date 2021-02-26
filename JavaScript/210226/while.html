@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while
+    </title>
+</head>
+<body>
+    <h1>구구단</h1>
+    <script>
+        // var sum = 0;
+        // var i = 1;
+        // while(i <= 100){
+        //     sum += i;
+        //     document.write(sum + ", " + i + "<br/>");
+        //     i++;
+        // }
+
+        // do{
+        //     sum += i;
+        //     document.write(sum + ", " + i + "<br/>");
+        //     i++;
+        // }while(i <= 100)
+        // document.write("1 ~" + (i -1 + "까지의 합 : " + sum));
+
+        var inputString = null;
+
+        alert("메시지를 입력하세요");
+        alert("프로그램을 종료하려면 q를 입력하세요.");
+
+        do{
+            inputString = prompt("메시지를 입력하세요.");
+            document.write(inputString + "<br/>");
+        }while(inputString != "q")
+
+        document.write("프로그램 종료");
+
+    </script>
+</body>
+</html>
