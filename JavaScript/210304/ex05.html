@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>물고기</title>
+    <style>
+        #panel{
+            width: 600px;
+            height: 300px;
+            border: 2px solid gray;
+            position: relative;
+        }
+        #bar{
+            position: absolute;
+            left: 50px;
+            top: 190px;
+            width: 500px;
+            height: 20px;
+            background-color: red;
+        }
+        #fish{
+            position: absolute;
+            left: 50px;
+            top: 120px;
+        }
+        #nav{
+            text-align: center;
+            width: 600px;
+            margin-top: 20px;
+        }
+        #btnStart, #btnStop{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script>
+        var $fish = null;
+        var step = 50;
+        var timerID = 0;
+        
+        $(document).ready(function(){
+            init();
+            initEvent();
+
+
+        });
+
+        function init(){
+            $fish = $("#fish");
+        }
+
+        function initEvent(){
+            $("#btnStart").click(function(){
+                start();
+            });
+
+            $("#btnStop").click(function(){
+                stop();
+            });
+        }
+
+        function start(){
+            if(timerID == 0){
+                timerID = setInterval(function(){
+                    move();
+                }, 100);
+            }
+        }
+
+        function stop(){
+            clearInterval(timerID);
+            timerID = 0;
+        }
+
+        function move(){
+            var x = $fish.position().left + step;
+            if(x >= 430) {
+                //.attr()함수는 선택자에 의해서 선택된 요소들 중에서 요소의 속성값을 받아온다
+                $fish.attr("src", "img/fish2.png");
+                step = -50;
+            }
+
+            if(x < 50) {
+                //.attr()함수는 선택자에 의해서 선택된 요소들 중에서 요소의 속성값을 받아온다
+                $fish.attr("src", "img/fish1.png");
+                step = +50;
+            }
+            $fish.css("left", x);
+        }
+    </script>
+</head>
+<body>
+    <div id="panel">
+        <div id="bar"></div>
+        <img src="img/fish1.png" id="fish">
+    </div>
+    <div id="nav">
+        <button id="btnStart">Start</button>
+        <button id="btnStop">Stop</button>
+    </div>
+</body>
+</html>

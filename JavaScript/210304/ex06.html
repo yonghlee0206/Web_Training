@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국기 롤링 배너</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .banner{
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            border: 2px solid gray;
+        }
+        #banner1{
+            top: 150px;
+            left: 150px;
+        }
+    </style>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var imgList = ["canada.png", "england.png", "germany.png", "italia.png", "korea.png", "spain.png", "usa.png"];
+            var index = 0;
+            var $banner = $(".banner");
+
+            setInterval(function(){
+                index++;
+                if(index >= imgList.length){
+                    index = 0;
+                }
+                var imgName = imgList[index];
+                $banner.attr("src", "img/" + imgName);
+                
+            }, 1000);
+        });
+    </script>
+</head>
+<body>
+    <img src="img/korea.png" class="banner" id="banner1">
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clearInterval</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 500px;
+            position: relative;
+            border: 3px solid red;
+        }
+        .container #gigu{
+            width: 50px;
+            margin-left: 250px;
+            margin-top: 150px;
+        }
+        #text{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #score{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script>
+        //gigu click -> score add //setInterval() 5sec
+        $(document).ready(function(){
+            var cnt = 0;
+            var $score = $("#score");
+            var play = true;
+
+            $("#gigu").click(function(){
+                if(play == true){
+                    cnt++;
+                    $score.html(cnt);
+                }
+                        });
+
+            setTimeout(function(){
+                alert("게임 종료");
+                play = false;
+            }, 5000);
+
+        });
+    </script>
+</head>
+<body>
+    <div id="text">
+        현재 점수 <span id="score">0</span>
+    </div>    
+    <div class="container">
+        <img src="img/gigu.png" id="gigu">
+    </div>
+</body>
+</html>
