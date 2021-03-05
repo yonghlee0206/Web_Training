@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>current time</title>
+    <style>
+        #print{
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            vertical-align: middle;
+            border: 3px solid red;
+        }
+    </style>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var $print = $("#print");
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var d = date.getDate();
+            var day = date.getDay();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var ms = date.getMilliseconds();
+            var arrDay = ["일", "월", "화", "수", "목", "금", "토"];
+
+            $print.html(year + "년 " + month + "월 " + d + "일 " + arrDay[day] + "요일");
+            // $print.html(h + "시 " + m + "분 " + s + "." + ms + "밀리초");
+        });
+    </script>
+</head>
+<body>
+    <div id="print">
+
+    </div>
+</body>
+</html>

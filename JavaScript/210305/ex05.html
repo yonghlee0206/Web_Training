@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .arrBanner{
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            border: 3px solid gray;
+        }
+        #arrBanner1{
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var $arrBanner = $(".arrBanner");
+            var i = 0;
+            var imgLish = ["img/canada.png", "img/england.png", "img/germany.png", "img/italia.png", "img/korea.png", "img/spain.png", "img/usa.png"];
+            setInterval(function(){
+                i++;
+                if(i >= imgLish.length){
+                    i = 0;
+                }
+                var imgName = imgLish[i];
+                $arrBanner.attr("src", imgName);
+            }, 1000);
+        });
+    </script>
+</head>
+<body>
+    <img src="img/korea.png" class="arrBanner" id="arrBanner1">
+</body>
+</html>

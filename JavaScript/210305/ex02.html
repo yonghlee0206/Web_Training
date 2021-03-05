@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #print{
+            width: 500px;
+            height: 300px;
+            text-align: center;
+            line-height: 150px;
+            vertical-align: middle;
+            border: 2px solid red;
+        }
+    </style>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script>
+        var str = "   hi1   hi2   string slice    ";
+
+        //정규표현식의 종류
+        // ^ : 입력의 시작을 찾음
+        // $ : 입력의 끝을 찾음
+        // * : 앞에 오는 문자를 0번 이상 찾음
+        // + : 앞에 오는 문자를 1번 이상 찾음
+        // ? : 앞에 오는 문자를 0번 이상 찾음
+        // \s : 공백문자를 찾음
+        // \S : 공백문자가 아닌 것을 찾음
+        // g : 전역검색을 칭함 
+
+        console.log("원본:" + str);
+        console.log("전체 공백 제거:" + str.replace(/(\s*)/g, ""));
+        console.log("앞 공백 제거:" + str.replace(/^\s*/, ""));
+        console.log("뒤 공백 제거:" + str.replace(/\s*$/, ""));
+    </script>
+</head>
+<body>
+    <div id="print"></div>
+</body>
+</html>
+
+
