@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 15px;
+            font-family: "굴림";
+        }
+    </style>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script>
+        // //자바스크립트
+        // window.onload = function(){
+        //     var btn1 = document.getElementById("btn1");
+        //     if(btn1.attachEvent){
+        //         btn1.attachEvent("onclick", function(){
+        //             alert("HI");
+        //         });
+        //     }
+        //     else{
+        //         btn1.addEventListener("click", function(){
+        //             alert("Hi");
+        //         });
+        //     }
+        // }
+        jQuery
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("HI");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">BUTTON</button>
+    <br/>
+</body>
+</html>

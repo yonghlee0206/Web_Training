@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 15px;
+            font-family: "굴림";
+        }
+        #panel{
+            width: 600px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+        }
+        #gigu{
+            position: absolute;
+            left: 50px;
+            top: 140px;
+            width: 50px;
+        }
+        #bar{
+            position: absolute;
+            left: 50px;
+            top: 190px;
+            width: 500px;
+            height: 15px;
+            background-color: red;
+        }
+        #nav{
+            text-align: center;
+            width: 600px;
+        }
+    </style>
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script>
+        // //자바스크립트
+        // window.onload = function(){
+        //     var gigu = document.getElementById("gigu");
+        //     var btnStart = document.getElementById("btnStart");
+
+        //     var left = 50;
+        //     var timerID = 0;
+
+        //     btnStart.addEventListener("click", function(){
+        //         timerID = setInterval(function(){
+        //             left++;
+        //             gigu.style.left = left + "px";
+        //         if(left >= 500){
+        //             clearInterval(timerID);
+        //             timerID = 0;
+        //         }
+        //         }, 10);
+        //     });
+        // }
+        // jQuery
+        $(document).ready(function(){
+            var $gigu = $("#gigu");
+            $("#btnStart").click(function(){
+                $gigu.animate({
+                    left : 500
+                }, 1000)
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="panel">
+        <div id="bar"></div>
+        <img src="img/gigu.png" id="gigu">
+    </div>
+    <div id="nav">
+        <button id="btnStart">Button</button>
+    </div>
+</body>
+</html>
