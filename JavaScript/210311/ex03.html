@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 15px;
+            font-family: "맑은 고딕";
+        }
+        ul, li{
+            border: 3px solid gray;
+            margin: 10px;
+        }
+        ul{
+            padding: 10px;
+        }
+        li.select{
+            background-color: aquamarine;
+        }
+    </style>
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var cnt = 6;
+            $("#btnAdd").click(function(){
+                cnt++;
+                // $("#menu").prepend("<li>MENU" + cnt + "</li>");
+                var $li = $("<li>MENU" + cnt + "</li>");
+                // $("#menu").prepend($li);
+                $li.insertBefore("#menu li:first");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btnAdd">ADD</button>
+    <ul id="menu">
+        <li>MENU1</li>
+        <li>MENU2</li>
+        <li>MENU3</li>
+        <li>MENU4</li>
+        <li class="select">MENU5</li>
+        <li>MENU6</li>
+    </ul>
+</body>
+</html>
